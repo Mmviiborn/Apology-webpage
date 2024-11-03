@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Puru</title>
+    <style>
+        /* Styling for the heart and button */
+        body, html {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #ffeded;
+        }
+
+        #heart {
+            font-size: 5rem;
+            color: #ff4d4d;
+            cursor: pointer;
+            animation: beat 1.2s infinite;
+            text-align: center;
+        }
+
+        @keyframes beat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+
+        #heart:hover {
+            color: #ff6666;
+        }
+
+        #letter {
+            display: none;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 600px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        #letter h2 {
+            color: #ff4d4d;
+            margin-top: 0;
+        }
+
+        #letter p {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Heart icon to tap -->
+    <div id="heart">❤️<br>Tap Here</div>
+
+    <!-- Apology letter -->
+    <div id="letter">
+        <h2>Hey Puru,</h2>
+        <p>
+            I’m really sorry about what happened last night. I never meant to hurt you or make you feel disrespected in any way. My words came out wrong, and I wish I could go back and fix them right now. That typo messed things up, and I completely understand how it came across—it wasn’t what I wanted to say at all.
+        </p>
+        <p>
+            I care about you more than anything, and I should’ve chosen my words more carefully, especially when texting. You mean the world to me, and I would never want you to feel misunderstood or unappreciated. I know long-distance is tough, and things like this only make it harder, but please know I’m learning from this.
+        </p>
+        <p>
+            Can we take a step back and talk about this? I want to understand what made you upset, too, so I can be a better partner. I just want us to keep moving forward together, and I’m here to listen. Let me make it up to you, please? You deserve nothing but my best, and that’s what I’ll keep trying to give you.
+        </p>
+        <p>Yours,<br>Sanskar</p>
+    </div>
+
+    <script>
+        // JavaScript to toggle visibility of the letter
+        document.getElementById("heart").onclick = function() {
+            document.getElementById("heart").style.display = "none";
+            document.getElementById("letter").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
